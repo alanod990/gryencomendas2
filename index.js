@@ -25,7 +25,7 @@ const MONGO_URL = "mongodb+srv://alanodx:ccwe7aqx55@gryencomenda.2g31h.mongodb.n
 
 // Conectando ao MongoDB
 mongoose
-  .connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(MONGO_URL)
   .then(() => console.log("Conectado ao MongoDB!"))
   .catch((error) => console.error("Erro ao conectar ao MongoDB:", error));
 
